@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="row pt-2 ps-3 pe-3 pb-3" id="mainRow">
+        <div class="col-4 ps-3 pt-2 pb-2 pe-3">
+            <div class="card p-3" id="inputCard" style="background-color: rgb(134,142,150); max-width: 30vw;">
+                <label for="filmName" class="form-label mt-2">Film Adı</label>
+                <input type="text" class="form-control mt-0 mb-3" id="filmName" style="max-width: 30vw;">
+            
+                <label for="type" class="form-label mt-2">Tür</label>
+                <input type="text" list="typeList" class="form-control mt-0 mb-3" id="filmType" style="max-width: 30vw;">
+                <datalist id="typeList">
+                    <option value="Korku"></option>
+                    <option value="Gerilim"></option>
+                    <option value="Komedi"></option>
+                    <option value="Dram"></option>
+                    <option value="Fantastik"></option>
+                    <option value="Bilim Kurgu"></option>
+                </datalist>
+            
+                <label for="image" class="form-label mt-2">Görsel</label>
+                <input type="text" class="form-control mt-0 mb-3" id="filmUrl" style="max-width: 30vw;">
+            
+                <button class="btn btn-danger" id="btnAdd" style="width: 100%;">Ekle</button>
+            </div>
+        </div>
+        
+
+        <div class="col-8 ps-2 pt-2 pb-2 pe-3 text-center" style="max-height: 100%;">
+            <div class="card ps-4 pt-2" style="background-color: rgb(134,142,150); width: 100%; height: 100%;">
+                <div class="row card-header p-0" style="width: 100%; background-color: rgb(114,112,120);">
+                    <div class="col-4">
+                        Film Adı
+                    </div>
+                    <div class="col-4">
+                        Türü
+                    </div>
+                    <div class="col-4">
+                        Görseli
+                    </div>
+                </div>
+                <div class="col-12 card-body p-0 pt-2 pe-4" id="filmList" style="overflow-y: auto;">
+                    <!-- Filmler buraya gelecek -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="film.js"></script>
+</body>
+</html>
